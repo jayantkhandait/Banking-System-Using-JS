@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="heading">Banking System Using JavaScript</div>
+        <div class="login-menu">
+            <input type="text" class="username" placeholder="Username">
+            <input type="text" class="pass" placeholder="Password">
+            <button class="login">LOGIN</button>
+        </div>
+        <div class="gretting">Welcome! <div class="name"></div> <div class="logout"><button>LOGOUT</button></div></div>
+    </nav>
+    <br>
+    <main>
+        <div class="balance-info">
+            <div class="bal-heading">Current Balance</div>
+            <div class="ruppee">&#8377;<span class="balance"></span></div>
+        </div>
+        <div class="info">
+            <div class="left">
+                <div class="passbook">
+                    <!-- <div class="entries">
+                        <div class="withdraw">WITHDRAW</div>
+                        <div class="amt">&#8377;<span class="trans-amt">5000</span></div>
+                    </div>
+                    <div class="entries">
+                        <div class="deposit">DEPOSIT</div>
+                        <div class="amt">&#8377;<span class="trans-amt">5000</span></div>
+                    </div>
+                    <div class="entries">
+                        <div class="deposit">DEPOSIT</div>
+                        <div class="amt">&#8377;<span class="trans-amt">5000</span></div>
+                    </div>
+                    <div class="entries">
+                        <div class="deposit">DEPOSIT</div>
+                        <div class="amt">&#8377;<span class="trans-amt">5000</span></div>
+                    </div> -->
+                    
+                </div>
+            </div>
+            <div class="right">
+                <div class="transfer-money">
+                    <h3>Transfer Money</h3>
+                    <input type="text" class="send-to" placeholder="Sender Name">
+                    <input type="number" class="amount" placeholder="Amount">
+                    <button class="transfer">&rarr;</button>
+                </div>
+                <div class="loan">
+                    <h3>Request Money</h3>
+                    <input type="number" class="loan-amt" placeholder="Amount">
+                    <button class="request">&rarr;</button>
+                </div>
+                <div class="close-acc">
+                    <h3>Close Account</h3>
+                    <input type="text" class="closingUN" placeholder="Username">
+                    <input type="text" class="closingP" placeholder="Password">
+                    <button class="closeAcc">&rarr;</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

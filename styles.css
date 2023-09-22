@@ -1,0 +1,175 @@
+/* bg-#e6e6ea, button or font- #f4f4f8
+    red- #fe4a49
+    blue - #2ab7ca
+    yellow -  #fed766
+*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f8;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    margin: 2rem 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.login-menu{
+    box-shadow: 0 0 6px rgb(0,0, 0);
+    padding: 1rem;
+    border-radius: 6px;
+}
+.login-menu input{
+    border: 1px dashed;
+}
+input{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 6px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.gretting{
+    display: none;
+    font-size: 1.5rem;
+}
+
+br{
+    content: "A";
+    display: block;
+    margin-bottom: 1rem;
+    border: 0.1px solid #808080;
+}
+
+main{
+    margin: 0 15%;
+    opacity: 0;
+    transition: 3s all;
+}
+
+.balance-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.balance{
+    margin-left: 0.2rem;
+}
+
+.logout{
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e6e6ea;
+    height: 60vh;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border: 0.1px solid;
+}
+
+.passbook{
+    width: 35vw;
+    height: 100%;
+    background-color: #f4f4f8;
+    overflow-y: scroll;
+}
+
+.entries{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    border-bottom: 1px solid #808080;
+    width: 90%;
+    margin-left: 1rem;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.withdraw{
+    background-color: #fe4a49;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #f4f4f8;
+}
+
+.deposit{
+    background-color: #2ab7ca;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #f4f4f8;
+
+}
+
+h3{
+    margin: 10px 10px;
+}
+.transfer-money{
+    background-color: #2ab7ca;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: #f4f4f8;
+}
+
+.loan{
+    background-color: #fed766;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: #f4f4f8;
+}
+
+.close-acc{
+    background-color: #fe4a49;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: #f4f4f8;
+}
+@media screen and (max-width: 800px){
+    nav{
+        margin: 2rem 10%;
+    }
+    .info{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .passbook{
+        width: 60vw;
+        max-height: 35vh;
+    }
+
+    .logout{
+        margin-left: 0.5rem;
+    }
+}
